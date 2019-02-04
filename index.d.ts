@@ -8,13 +8,13 @@ declare module "react-native-cached-media" {
        * props for the ActivityIndicator that is shown while the image is downloaded.
        */
       activityIndicatorProps: ReactNative.ActivityIndicatorProperties
-      /** 
-       * component prop to set custom ActivityIndicator 
+      /**
+       * component prop to set custom ActivityIndicator
        */
       loadingIndicator: ReactNative.ComponentInterface<any>
-      /** 
-       * function when provided, the returned object will be used as the headers object 
-       * when sending the request to download the image. (default: () => Promise.resolve({})) 
+      /**
+       * function when provided, the returned object will be used as the headers object
+       * when sending the request to download the image. (default: () => Promise.resolve({}))
        */
       resolveHeaders: Promise<{}>
       /**
@@ -54,7 +54,7 @@ declare module "react-native-cached-media" {
        */
       useQueryParamsInCacheKey: string[] | boolean
       /**
-       * the root directory to use for caching, corresponds to CachedImage prop of same name, 
+       * the root directory to use for caching, corresponds to CachedImage prop of same name,
        * defaults to system cache directory
        */
       cacheLocation: string
@@ -90,13 +90,13 @@ declare module "react-native-cached-media" {
 
       /** Delete the cached image corresponding to the given url */
       deleteUrl(urls: string, options?: CacheOptions): Promise<any>
-       
+
       /**
       * Seed the cache of a specified url with a local image
       * Handy if you have a local copy of a remote image, e.g. you just uploaded local to url.
       */
       seedAndCacheUrl(url: string, seedPath: string, options?: CacheOptions): Promise<any>
-       
+
       /**
        * Clear the entire cache.
        */
@@ -116,6 +116,7 @@ declare module "react-native-cached-media" {
     }
   }
   export class CachedImage extends React.Component<CachedImage.Image, any> {}
+  export class CachedVideo extends React.Component<CachedVideo.Video, any> {}
   export class ImageCacheProvider extends React.Component<CachedImage.ImageCacheProvider, any> {}
   export const ImageCacheManager: CachedImage.ImageCacheManager
   export const ImageCachePreloader: CachedImage.ImageCachePreloader
