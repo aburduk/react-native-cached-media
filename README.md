@@ -1,4 +1,4 @@
-# react-native-cached-image
+# react-native-cached-media
 
 CachedImage component for react-native
 
@@ -6,9 +6,9 @@ This package is greatly inspired by [@jayesbe](https://github.com/jayesbe)'s ama
 
 ## Installation
 
-    npm install react-native-cached-image --save
+    npm install react-native-cached-media --save
     - or -
-    yarn add react-native-cached-image
+    yarn add react-native-cached-media
 
 We use [`react-native-fetch-blob`](https://github.com/wkh237/react-native-fetch-blob#installation) to handle file system access in this package and it requires an extra step during the installation.  
 
@@ -34,7 +34,7 @@ import React from 'react';
 import {
     CachedImage,
     ImageCacheProvider
-} from 'react-native-cached-image';
+} from 'react-native-cached-media';
 
 const images = [
     'https://example.com/images/1.jpg',
@@ -70,7 +70,7 @@ const {
     CachedImage,            // react-native component that is a drop-in replacement for your react-native `Image` components
     ImageCacheProvider,     // a top level component that provides accsess to the underlying `ImageCacheManager` and preloads images
     ImageCacheManager,      // the logic behind cache machanism - ttl, fs, url resolving etc. 
-} = require('react-native-cached-image');
+} = require('react-native-cached-media');
 ```
 
 ### ImageCacheManager

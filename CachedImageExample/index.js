@@ -19,7 +19,7 @@ const {
     CachedImage,
     ImageCacheProvider,
     ImageCacheManager,
-} = require('react-native-cached-image');
+} = require('react-native-cached-media');
 
 const {
     width
